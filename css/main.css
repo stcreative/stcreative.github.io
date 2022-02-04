@@ -1,0 +1,188 @@
+html, body{
+    overflow: hidden;
+}
+#header .container .all-menu span{
+	background: #ffffff;
+}
+.container-m{
+    height:100vh;
+    padding:305px 8%;
+}
+.bg{
+    background-image: url("../img/main_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100vh;
+    z-index: -1;
+    opacity: 0;
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -webkit-transition: transform 7s ease-out, opacity 1s ease 0.3s;
+    transition: transform 7s ease-out, opacity 1s ease 0.3s;
+}
+.bg.active{
+    opacity: 1;
+    -ms-transform: scale(1, 1) rotate(.001deg);
+    -webkit-transform: scale(1, 1) rotate(.001deg);
+    transform: scale(1, 1) rotate(.001deg);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition: transform 7s ease-out, opacity 1s ease 0.3s;
+    transition: transform 7s ease-out, opacity 1s ease 0.3s;
+}
+.intro strong em{
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color:#a1ce00;
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+    
+}
+.intro strong .txt01{
+    transition: -webkit-transform 1.5s, -webkit-opacity 1.5s;
+    transition: transform 1.5s, opacity 1.5s;
+    -webkit-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+    
+}
+.intro strong .txt02{
+    transition: -webkit-transform 1.5s, -webkit-opacity 1.5s;
+    transition: transform 1.5s, opacity 1.5s;
+    -webkit-transition-delay: 1.7s;
+    transition-delay: 1.7s;
+    
+}
+.intro strong .txt03{
+    transition: -webkit-transform 3s, -webkit-opacity 1.5s;
+    transition: transform 1.5s, opacity 1.5s;
+    -webkit-transition-delay: 1.9s;
+    transition-delay: 1.9s;
+}
+.bg.active + .intro strong em{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+.intro .txt04{
+    margin-top:18px;
+    font-size: 18px;
+    color:#535251;
+    opacity: 0;
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+}
+.bg.active + .intro .txt04{
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    opacity: 1;
+    transition: -webkit-transform 1s, -webkit-opacity 1s;
+    transition: transform 1s, opacity 1s;
+    -webkit-transition-delay: 2.3s;
+    transition-delay: 2.3s;
+   
+}
+.link{
+    position: absolute;
+    width: 590px;
+    left: 50%;
+    margin-left: -295px;
+    bottom: 174px;;
+}
+.link li:first-child{
+    margin-left: 0;
+}
+.link li{
+    float:left;
+    margin-left:60px;
+    
+}
+.link li a{
+    display:block;
+    width:154px;
+    height:154px;
+    line-height: 154px;
+    border-radius: 50%;
+    background-color: #a1ce00;
+   
+    text-align: center;
+    
+    opacity: 0;
+    -webkit-transform: translateY(250px);
+    transform: translateY(250px);
+}
+.link li a img{
+    display: none;
+}
+.link li a span{
+    color:#fff;
+    font-size: 20px;
+}
+
+.bg.active + .intro .link li a{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.bg.active + .intro .link li:nth-child(1) a{
+    transition: -webkit-transform 1.5s, -webkit-opacity 1.5s;
+    transition: transform 1.5s, opacity 1.5s;
+    -webkit-transition-delay: 2.5s;
+    transition-delay: 2.5s;
+}
+.bg.active + .intro .link li:nth-child(2) a{
+    transition: -webkit-transform 1.5s, -webkit-opacity 1.5s;
+    transition: transform 1.5s, opacity 1.5s;
+    -webkit-transition-delay: 2.8s;
+    transition-delay: 2.8s;
+}
+.bg.active + .intro .link li:nth-child(3) a{
+    transition: -webkit-transform 1.5s, -webkit-opacity 1.5s;
+    transition: transform 1.5s, opacity 1.5s;
+    -webkit-transition-delay: 3.1s;
+    transition-delay: 3.1s;
+}
+
+#footer{
+    padding: 0.7rem;
+    position:fixed;
+    left:0;
+    bottom:0;
+    background-color: #000;
+    background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+#footer address{
+    color:#fff;
+    font-size: 12px;
+    line-height: 1.5;
+}
+@media (min-width:1024px){
+    .bg.active + .intro .link li a:hover{
+        box-shadow: 0px 0px 10px 5px #a1ce00;
+        transition: all 0.5s;
+    }
+    .bg.active + .intro .link li a:hover span{
+        font-size: 21px;
+        transition: all 0.5s;
+    }
+    #footer{
+        width:100%;
+        height:80px;
+        padding:20px 8%;
+        transform: translateY(80px);
+        transition: -webkit-transform 1s, -webkit-opacity 1s;
+        transition: transform 1s, opacity 1s;
+    }
+    #footer.on{
+        transform: translateY(0px);
+    }
+}

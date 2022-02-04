@@ -1,0 +1,125 @@
+html,body{
+    height:100%;
+}
+body{
+    -webkit-text-size-adjust:none;
+}
+#header{
+    position: fixed;
+    display: table;
+    width: 100%;
+    /* height: 120px; */
+    padding: 0 4%;
+    z-index: 2;
+}
+/* 햄버거버튼 */
+#header .container .all-menu{
+    width:38px;
+    height:23px;
+    background: none;
+    margin-top:7px;
+    /* margin-left:35px; */
+    position: relative;
+}
+#header .container .all-menu:focus{
+    outline: none;
+}
+#header .container .all-menu span{
+    border: none;
+    height: 3px;
+    width: 28px;
+    position: absolute;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    left:0;
+	top :12px;
+}
+#header .container .all-menu .top{
+	margin-top: -12px;
+}
+#header .container .all-menu .middle{
+    width:38px;
+    margin-top:-2px;
+}
+#header .container .all-menu .bottom{
+	margin-top: 8px;
+}
+#header .container .all-menu.on .top{
+	-webkit-transform: translateY(10px) translateX(0) rotate(-45deg);
+	transform: translateY(10px) translateX(0) rotate(45deg);
+    background: #ffffff;
+}
+#header .container .all-menu.on .middle{
+	opacity: 0;
+    background: #ffffff;
+}
+#header .container .all-menu.on .bottom{
+	-webkit-transform: translateY(-10px) translateX(0) rotate(-45deg);
+    transform: translateY(-10px) translateX(0) rotate(-45deg);
+    background: #ffffff;
+}
+#header .container{
+    width: 100%;
+    padding: 41px 3%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    transition: all 0.5s ease-out;
+}
+#header .container.scroll{
+    padding:21px 3%;
+    transition: all 0.5s ease-out;
+}
+#header .container .logo,
+#header .container .all-menu,
+#header .container #gnb{
+    display: inline-block;
+    vertical-align: middle;
+}
+#header .container #gnb{
+    position: relative;
+    display: none;
+    margin-top:6px;
+}
+#header .container #gnb .bar{
+    position: absolute;
+    height: 3px;
+    left:35px;
+    bottom:-14px;
+    background-color: #000;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#header .container #gnb,
+#header .container .all-menu{
+    float:right;
+}
+#header .container #gnb ul li{
+    float:left;
+    padding:0px 35px;
+}
+#header .container #gnb ul li a{
+    font-size: 24px;
+    color:#fff;
+    font-weight: 400;
+}
+#header .container #gnb ul li a:hover{
+    color:#000;
+    -webkit-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+.btn-area a{
+    text-align: center;
+}
+
+@media (max-width:1240px){
+    /* br{
+        display: none !important;
+    } */
+    #header .container #gnb ul li{
+        padding:0 25px;
+    }
+    #header .container #gnb .bar{
+        left:26px;
+    }
+}

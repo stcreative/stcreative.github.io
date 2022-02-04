@@ -1,0 +1,229 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin-left:-1px;
+}
+.slick-list:before,
+.slick-list:after{
+    position: absolute;
+    width:229px;
+    height:1px;
+    clear:both;
+    display:block;
+    content:"";
+    right:0px;
+    background: url("../img/line.png") no-repeat;
+}
+.slick-list:before{
+    top:0;
+}
+.slick-list:after{
+    bottom:0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    /* float: left; */
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    width: 229px !important;
+    height: 105px;
+    color:#000;
+    border-bottom: 1px solid #dedede;
+    margin-left:6px;
+}
+.slick-vertical .slick-slide a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 16px 19px;
+    color: #444;
+    /* overflow: hidden; */
+    box-sizing:border-box;
+}
+.slick-vertical .slick-slide a:focus{
+    outline: none;
+}
+.slick-vertical .slick-slide.on a{
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #5b6e8a;
+}
+.slick-vertical .slick-slide.on{
+    position: relative;
+}
+.slick-vertical .slick-slide.on a:after{
+    position: absolute;
+    display: block;
+    clear:both;
+    content:"";
+    width:7px;
+    height:13px;
+    background: url("../img/link_active.png") no-repeat;
+    top:50%;
+    margin-top:-6.5px;
+    left:-7px;
+}
+.slick-vertical .slick-slide a strong{
+    font-size: 14px;
+}
+.slick-vertical .slick-slide a p,
+.slick-vertical .slick-slide a span{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 12px;
+    margin:8px 0px;
+    -webkit-line-clamp: 2;
+    height:2.5em;
+}
+.slick-vertical .slick-slide a span{
+    height: 2.4em;
+    font-weight: bold;
+    text-align: left;
+    -webkit-line-clamp: 2;
+    line-height: 1.1;
+    white-space: normal;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.right-link-box{
+	position: fixed;
+    width: 269px;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.right-link-box .title-box{
+    width: 269px;
+    height:110px;
+    background: url(../img/sub_name_bg.png) no-repeat;/* url(/images/MediaStat/sub_name_bg.png) no-repeat; */
+    padding: 47px 0 0 30px;
+    box-sizing: border-box;
+    background-position-y: -14px;
+}
+.right-link-box .title-box h2{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+}
+.magazine-viewport h1{
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 45px;
+    margin-left: 10px;
+    width: 70%;
+    margin: 0px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
