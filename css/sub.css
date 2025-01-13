@@ -687,6 +687,8 @@ article.active .products .product-list{
 }
 .block .img-area{
     background-color: #e4e4e4;
+    max-height: 158px;
+    overflow: hidden;
 }
 .block .img-area img{
     max-width: 100%;
