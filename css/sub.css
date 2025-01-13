@@ -703,7 +703,6 @@ article.active .products .product-list{
     padding:20px 0 13px;
     text-align: left;
     display: flex;
-    align-items: center;
 }
 .block .img-cnt .img-logo img{
     height:auto;
