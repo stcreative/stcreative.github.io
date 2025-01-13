@@ -702,6 +702,11 @@ article.active .products .product-list{
     border-bottom: 1px solid #e4e4e4;
     padding:20px 0 13px;
     text-align: left;
+    display: flex;
+    align-items: center;
+}
+.block .img-cnt .img-logo img{
+    height:auto;
 }
 .block .img-cnt .img-info .img-title{
     display: block;
