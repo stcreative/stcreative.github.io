@@ -659,9 +659,7 @@ article.active .products .product-list{
     opacity: 1;
     z-index: 1;
 }
-.reference-list #list2020{
-    display: flex;
-}
+
 .bg {
     display: block;
     width:100%; 
