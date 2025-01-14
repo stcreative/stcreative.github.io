@@ -1,62 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no, address=no, email=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Stcreative</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moblie_common.css">
-    <link rel="stylesheet" href="css/moblie_main.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/moblie_common.css" />
+    <link rel="stylesheet" href="css/moblie_main.css" />
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
-</head>
-<body>
-    <div id="wrap">
-        <header id="header">
-            <div class="container">
-                <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
-                <button type="button" class="all-menu">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
-                </button>
-                <nav id="gnb">
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="product.html">Product</a></li>
-                        <li><a href="reference.html">Reference</a></li>
-                        <li><a href="news.html">News</a></li>
-                    </ul>
-                    <i class="bar"></i>
-                </nav>
-            </div>
-        </header>
-        <div class="container-m">
-            <div class="bg"></div>
-            <div class="intro">
-                <strong>
-                    <em class="txt01">SMART</em>
-                    <em class="txt02">TOMORROW</em>
-                    <em class="txt03">CREATIVE</em>
-                </strong>
-                <P class="txt04">현실을 뛰어넘는 즐거운 상상으로 SMART한 미래를 창조하는 STCreative</P>
-                <ul class="link">
-                    <li><a href="about.html"><img src="img/circle.png" alt=""><span>STC About</span></a></li>
-                    <li><a href="service.html"><img src="img/circle.png" alt=""><span>Solution</span></a></li>
-                    <li><a href="product.html"><img src="img/circle.png" alt=""><span>Product</span></a></li>
-                </ul>
-            </div>
+
+    <script>
+      function closePopup() {
+        const popup = document.getElementById("popup");
+        popup.style.display = "none";
+
+        const doNotShowAgain =
+          document.getElementById("doNotShowAgain").checked;
+        if (doNotShowAgain) {
+          const today = new Date();
+          const expires = new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            today.getDate() + 1
+          );
+          document.cookie = `popupClosed=true; expires=${expires.toUTCString()}; path=/`;
+        }
+      }
+
+      function showPopup() {
+        const popup = document.getElementById("popup");
+        if (document.cookie.indexOf("popupClosed=true") === -1) {
+          popup.style.display = "block";
+        }
+      }
+
+      window.onload = showPopup;
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <div id="popup">
+      <div class="card">
+        <div class="popup-img">
+          <img src="./img/board/0005425810_001_20250108160112035.jpg" alt="" />
         </div>
-        <footer id="footer">
-            <address>서울특별시 성동구 성수일로 89, 10층 1006호 (성수동1가, Metamorpho(지식산업센터))Tel. 02-523-0030   Fax. 02-2124-2003</address>
-            <address>Copyright © STCreative inc. 2019</address>
-        </footer>
+        <div class="text">
+          <div class="title">
+            데이터 고도화 기업 에스티크리에이티브에 DQ 레벨3 등급 부여
+          </div>
+          <div class="info">
+            데이터 품질인증기관 씨에이에스(대표: 전영하)는 데이터 고도화
+            전문기업 에스티크리에이티브(대표: 노정용)에 DQ 인증(데이터 품질인증)
+            레벨3 등급을 부여하였습니다.
+          </div>
+        </div>
+        <div class="popup-bottom">
+          <label>
+            <input type="checkbox" id="doNotShowAgain" /> 오늘 하루 보지 않기
+          </label>
+          <button onclick="closePopup()">닫기</button>
+        </div>
+      </div>
     </div>
-</body>
+    <div id="wrap">
+      <header id="header">
+        <div class="container">
+          <h1 class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+          </h1>
+          <button type="button" class="all-menu">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </button>
+          <nav id="gnb">
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="reference.html">Reference</a></li>
+              <li><a href="news.html">News</a></li>
+            </ul>
+            <i class="bar"></i>
+          </nav>
+        </div>
+      </header>
+      <div class="container-m">
+        <div class="bg"></div>
+        <div class="intro">
+          <strong>
+            <em class="txt01">SMART</em>
+            <em class="txt02">TOMORROW</em>
+            <em class="txt03">CREATIVE</em>
+          </strong>
+          <p class="txt04">
+            현실을 뛰어넘는 즐거운 상상으로 SMART한 미래를 창조하는 STCreative
+          </p>
+          <ul class="link">
+            <li>
+              <a href="about.html"
+                ><img src="img/circle.png" alt="" /><span>STC About</span></a
+              >
+            </li>
+            <li>
+              <a href="service.html"
+                ><img src="img/circle.png" alt="" /><span>Solution</span></a
+              >
+            </li>
+            <li>
+              <a href="product.html"
+                ><img src="img/circle.png" alt="" /><span>Product</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer id="footer">
+        <address>
+          서울특별시 성동구 성수일로 89, 10층 1006호 (성수동1가,
+          Metamorpho(지식산업센터))Tel. 02-523-0030 Fax. 02-2124-2003
+        </address>
+        <address>Copyright © STCreative inc. 2019</address>
+      </footer>
+    </div>
+  </body>
 </html>

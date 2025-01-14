@@ -1,79 +1,85 @@
-@media (max-width:960px){
-    html{
-        font-size: 10px;
-    }
-    body{
-        font-size: 1.2rem;
-    }
-    #header,
-    #header .container #gnb ul li{
-        padding:0;
-    }
-    #header .container{
-        padding:16px 0 16px;
-        transition: none;
-    }
-    #header.on .container{
-        padding:16px 0 0;
-    }
-    #header .container .logo{
-        margin-left:3%;
-    }
-    #header .container .logo a img{
-        width:50px;
-    }
-    #header .container .all-menu{
-        margin-right: 5%;
-        margin-top: 0;
-    }
-    #header .container #gnb{
-        margin-top: 16px;
-    }
-    #header .container #gnb,
-    #header .container #gnb ul li{
-        float:none;
-    }
-    #header .container #gnb ul li{
-        text-align: center;
-    }
-    #header .container #gnb ul li a{
-        display: block;
-        width:100%;
-        padding:1.4rem 0;
-        font-size: 1.4rem;
-        border-top: 1px solid #c5da80;
-    }
-    .bar{
-        display: none;
-    }
-    #header .container .all-menu{
-        width:24px;
-        height:24px;
-    }
-    #header .container .all-menu span{
-        width:24px;
-        height:2px;
-        right:5%;
-    }
-    #header .container .all-menu .top{
-        margin-top:-6px;
-    }
-    #header .container .all-menu .middle{
-        width:24px;
-        margin-top: 0;
-    }
-    #header .container .all-menu .bottom{
-        margin-top: 6px;
-    }
-    #header .container .all-menu.on span{
-        height:2px;
-    }
-    #header .container .all-menu.on .top{
-        -webkit-transform: translateY(5px) translateX(0) rotate(-45deg);
-        transform: translateY(5px) translateX(0) rotate(45deg);
-    }
-    #header .container .all-menu.on .bottom{
-        -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
-        transform: translateY(-8px) translateX(0) rotate(-45deg);
-    }
+@media (max-width: 960px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    font-size: 1.2rem;
+  }
+  #popup {
+    width: calc(100% - 40px);
+  }
+  #popup .card {
+    width: 100%;
+  }
+  #header,
+  #header .container #gnb ul li {
+    padding: 0;
+  }
+  #header .container {
+    padding: 16px 0 16px;
+    transition: none;
+  }
+  #header.on .container {
+    padding: 16px 0 0;
+  }
+  #header .container .logo {
+    margin-left: 3%;
+  }
+  #header .container .logo a img {
+    width: 50px;
+  }
+  #header .container .all-menu {
+    margin-right: 5%;
+    margin-top: 0;
+  }
+  #header .container #gnb {
+    margin-top: 16px;
+  }
+  #header .container #gnb,
+  #header .container #gnb ul li {
+    float: none;
+  }
+  #header .container #gnb ul li {
+    text-align: center;
+  }
+  #header .container #gnb ul li a {
+    display: block;
+    width: 100%;
+    padding: 1.4rem 0;
+    font-size: 1.4rem;
+    border-top: 1px solid #c5da80;
+  }
+  .bar {
+    display: none;
+  }
+  #header .container .all-menu {
+    width: 24px;
+    height: 24px;
+  }
+  #header .container .all-menu span {
+    width: 24px;
+    height: 2px;
+    right: 5%;
+  }
+  #header .container .all-menu .top {
+    margin-top: -6px;
+  }
+  #header .container .all-menu .middle {
+    width: 24px;
+    margin-top: 0;
+  }
+  #header .container .all-menu .bottom {
+    margin-top: 6px;
+  }
+  #header .container .all-menu.on span {
+    height: 2px;
+  }
+  #header .container .all-menu.on .top {
+    -webkit-transform: translateY(5px) translateX(0) rotate(-45deg);
+    transform: translateY(5px) translateX(0) rotate(45deg);
+  }
+  #header .container .all-menu.on .bottom {
+    -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
+    transform: translateY(-8px) translateX(0) rotate(-45deg);
+  }
 }
