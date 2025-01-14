@@ -200,6 +200,7 @@ body {
 #popup .info {
   color: #64686b;
   margin-top: 15px;
+  line-height: 1.3em;
 }
 #popup .popup-bg {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16))
