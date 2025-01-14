@@ -290,6 +290,9 @@ body {
 #popup .popup-img {
   padding: 15px;
 }
+#popup .popup-img img {
+  width: 100%;
+}
 @media (max-width: 1240px) {
   /* br{
         display: none !important;
