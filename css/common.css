@@ -112,6 +112,7 @@ body {
 .btn-area a {
   text-align: center;
 }
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 #popup {
   display: none;
   position: fixed;
@@ -198,7 +199,7 @@ body {
 }
 #popup .info {
   color: #64686b;
-  margin-top:15px;
+  margin-top: 15px;
 }
 #popup .popup-bg {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16))
@@ -293,6 +294,16 @@ body {
 }
 #popup .popup-img img {
   width: 100%;
+}
+#popup .popup-link {
+  color: blue;
+  text-decoration: underline;
+  margin-top: 10px;
+  display: block;
+}
+#popup .popup-link:hover {
+  color: darkblue;
+  text-decoration: underline;
 }
 @media (max-width: 1240px) {
   /* br{
